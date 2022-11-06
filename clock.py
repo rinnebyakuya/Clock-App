@@ -3,7 +3,7 @@ from time import *
 
 def update():                                                                       # a recursive function to update the values in the window every 1000 ms  
     time_string = strftime("%I:%M:%S %p")                                           # get the current time using strftime from time library
-    time_label.config(text = time_string)                                           # set the time_label text to the time_string
+    time_label.config(text = 'Current time is: ' + time_string)                     # set the time_label text to the time_string
 
     day_string = strftime("%A")                                                     # repeat fo other labels
     day_label.config(text = day_string)
@@ -16,7 +16,7 @@ def update():                                                                   
  
 window = Tk()                                                                       # the window where we show the lables
 
-w = 800 
+w = 900
 h = 320 
 window.config(bg='Black')                                                           # set up the background to black
 window.resizable(width = False, height = False)                                     # and the resizability to false
